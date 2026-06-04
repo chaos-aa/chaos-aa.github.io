@@ -75,6 +75,24 @@
       opacity: 0.25;
     }
 
+.grid-glow {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(110,231,255,0.55) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(110,231,255,0.55) 1px, transparent 1px);
+  background-size: 64px 64px;           /* matches your .grid-veil grid */
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+  -webkit-mask-image: radial-gradient(220px circle at var(--gx, -200px) var(--gy, -200px), #000 0%, transparent 65%);
+          mask-image: radial-gradient(220px circle at var(--gx, -200px) var(--gy, -200px), #000 0%, transparent 65%);
+}
+.grid-glow.active { 
+    opacity: 1; 
+}
+
     .container {
       position: relative;
       z-index: 1;

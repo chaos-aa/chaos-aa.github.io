@@ -2,175 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-    <meta name="author" content="Chaos AA">
+  <meta name="author" content="Taif Al-Amin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Studio - Python</title>
-  <link rel="stylesheet" href="styles/claude.css">
-</head>
+  <title>Taif Al-Amin — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 <body>
-  
-  <div class="topbar">
-    <div class="topbar-left">BEYOND GAMING</div>
-    <div class="topbar-right">ABOVE AND BEYOND</div>
-  </div>
+  <div class="grid-veil"></div>
 
-  <div class="scroll-banner-container">
-  <div class="scroll-banner" id="scroll-banner-one">
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-  </div>
-  <div class="scroll-banner" id="scroll-banner-two">
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-    <span class="banner-item">⚡ WELCOME TO GAME LABS ⚡</span>
-  </div>
-  <div class="banner-fade"></div>
-</div>
-  <div class="wrapper">
-    
-    <div class="sidebar-left">
-      <div class="box">
-        <div class="box-title">Game List/Links</div>
-        <div class="box-content">
-          <p><a href="FINAL_BUILD_FR/game.html">Maze</a></p>
-          <p><a href="team.html">Meet the Team</a></p>
-          <p>Brainrot</p>
-          <p>FPS</p>
-          <p>Horror</p>
+  <main class="container">
+
+    <!-- ============== HERO ============== -->
+    <header class="hero">
+      <div>
+        <div class="hero-eyebrow reveal d1">Portfolio — CHAOS-AA</div>
+        <h1 class="nameTitle reveal d2">Taif <span class="accent">Al-Amin</span></h1>
+        <p class="hero-role reveal d3">Web developer &amp; IT student building thoughtful interfaces and dependable systems.</p>
+      </div>
+
+      <aside class="profileCard reveal d4">
+        <div class="label">// profile</div>
+        <p>
+          An aspiring IT professional and student with skills in
+          <strong>web development</strong>, <strong>networking</strong>,
+          <strong>server management</strong>, and <strong>software development</strong>.
+          I have a passion for designing websites with distinctive visuals and styling,
+          as well as building programs with a clear, visible sense of purpose.
+        </p>
+      </aside>
+    </header>
+
+    <!-- ============== PROJECTS ============== -->
+    <section id="projects">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <h2 class="section-title">Projects</h2>
+        <span class="section-rule"></span>
+      </div>
+
+      <div class="projects">
+        <a href="https://chaos-aa.github.io/gamestudioTH/" class="projectCard" target="_blank" rel="noopener">
+          <div class="projTop">
+            <span class="projTag">Featured</span>
+            <span class="projArrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+          <div class="projBody">
+            <h3 class="projTitle">Game Studio </h3>
+            <p class="projectDetails">Basic website built with HTML, CSS and JavaScript. Built for a game studio to showcase games and details on the studio. 
+              Aimed for a retro neon style theme inspired by older websites from the early 2000s.
+            </p>
+            <div class="projStack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </a>
+
+        <a href="https://chaos-aa.github.io/halalblogtas/" class="projectCard" target="_blank" rel="noopener">
+          <div class="projTop">
+            <span class="projTag">Project</span>
+            <span class="projArrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </div>
+          <div class="projBody">
+            <h3 class="projTitle">Halal Takeout Tasmania</h3>
+            <p class="projectDetails">A personal blog style website that lists (or tries to at least) every Halal restaurant in Tasmania, providing basic information and a personal
+              review on each restaurant. Built with a basic base, then converted using the Astro framework to simulate a PHP-like database structure to store the restaurants, as well
+              as including filters by tag. Currently testing using Zapier to allow users to nominate restaurants to be added directly to the site.
+            </p>
+            <div class="projStack"><span>Astro</span><span>HTML</span><span>CSS</span><span>Zapier</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============== WEB DEV SKILLS — BANNER ============== -->
+    <section id="webdev">
+      <p class="prebannerText reveal">Web Development Skills</p>
+      <div class="scroll-banner-container reveal">
+        <div class="scroll-banner">
+          <!-- set A -->
+          <span class="banner-item">HTML</span>
+          <span class="banner-item">CSS</span>
+          <span class="banner-item">JavaScript</span>
+          <span class="banner-item">PHP</span>
+          <span class="banner-item">SQL</span>
+          <span class="banner-item">Astro</span>
+          <span class="banner-item">Bootstrap</span>
+          <span class="banner-item">Vue.js</span>
+          <span class="banner-item">Node.js</span>
+          <!-- set B (duplicate for seamless loop) -->
+          <span class="banner-item" aria-hidden="true">HTML</span>
+          <span class="banner-item" aria-hidden="true">CSS</span>
+          <span class="banner-item" aria-hidden="true">JavaScript</span>
+          <span class="banner-item" aria-hidden="true">PHP</span>
+          <span class="banner-item" aria-hidden="true">SQL</span>
+          <span class="banner-item" aria-hidden="true">Astro</span>
+          <span class="banner-item" aria-hidden="true">Bootstrap</span>
+          <span class="banner-item" aria-hidden="true">Vue.js</span>
+          <span class="banner-item" aria-hidden="true">Node.js</span>
         </div>
       </div>
-      
-      
-    </div>
+    </section>
 
-    <main>
-      
-      <div class="header">
-        <h1>GAME LABS</h1>
-
+    <!-- ============== OTHER IT SKILLS ============== -->
+    <section id="itskills">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <h2 class="section-title">Other IT Skills</h2>
+        <span class="section-rule"></span>
       </div>
 
-      <div id="video-bar">Game Demo Below</div>
-      <div class="row">
-      <div class="video-box">
-        <video width="20%" controls>
-          <source src="videos/nanana.mp4" type="video/mp4">
-          Your browser doesn't support HTML5 video.
-        </video>
-      </div>
+      <div class="skillsIT">
+        <div class="skillCard reveal d1">
+          <span class="num">01</span>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+          <h3>Networking</h3>
+          <p>Configuring, routing and securing reliable connections across devices.</p>
+        </div>
 
-      <div class="text-box side-text">
-        <pre>
-𓅃𓅂𓂕𓂋𓅂 𓈖𓅱 𓋴𓏏𓂋𓄿𓈖𓎼𓅂𓂋𓋴 𓏏𓅱 𓃭𓅱𓆯𓅂
-𓇌𓅱𓅲 𓈎𓈖𓅱𓅃 𓏏𓉔𓅂 𓂋𓅲𓃭𓅂𓋴 𓄿𓈖𓂧 𓋴𓅱 𓂧𓅱 𓇋
-𓄿 𓆑𓅲𓃭𓃭 𓎢𓅱𓅓𓅓𓇋𓏏𓅓𓅂𓈖𓏏𓂕𓋴 𓅃𓉔𓄿𓏏 𓇋𓂕𓅓 𓏏𓉔𓇋𓈖𓈎𓇋𓈖𓎼 𓅱𓆑
-𓇌𓅱𓅲 𓅃𓅱𓅲𓃭𓂧𓈖𓂕𓏏 𓎼𓅂𓏏 𓏏𓉔𓇋𓋴 𓆑𓂋𓅱𓅓 𓄿𓈖𓇌 𓅱𓏏𓉔𓅂𓂋 𓎼𓅲𓇌
-𓇋 𓆓𓅲𓋴𓏏 𓅃𓄿𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓇌𓅱𓅲 𓉔𓅱𓅃 𓇋𓂕𓅓 𓆑𓅂𓅂𓃭𓇋𓈖𓎼
-𓎼𓅱𓏏𓏏𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓅲𓈖𓂧𓅂𓂋𓋴𓏏𓄿𓈖𓂧
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓃭𓅂𓏏 𓇌𓅱𓅲 𓂧𓅱𓅃𓈖
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓂋𓅲𓈖 𓄿𓂋𓅱𓅲𓈖𓂧 𓄿𓈖𓂧 𓂧𓅂𓋴𓅂𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓎢𓂋𓇌
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓋴𓄿𓇌 𓎼𓅱𓅱𓂧𓃀𓇌𓅂
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓄿 𓃭𓇋𓅂 𓄿𓈖𓂧 𓉔𓅲𓂋𓏏 𓇌𓅱𓅲
-𓅃𓅂𓂕𓆯𓅂 𓈎𓈖𓅱𓅃𓈖 𓅂𓄿𓎢𓉔 𓅱𓏏𓉔𓅂𓂋 𓆑𓅱𓂋 𓋴𓅱 𓃭𓅱𓈖𓎼
-𓇌𓅱𓅲𓂋 𓉔𓅂𓄿𓂋𓏏𓂕𓋴 𓃀𓅂𓅂𓈖 𓄿𓎢𓉔𓇋𓈖𓎼𓄼 𓃀𓅲𓏏 𓇌𓅱𓅲𓂕𓂋𓅂 𓏏𓅱𓅱 𓋴𓉔𓇌 𓏏𓅱 𓋴𓄿𓇌 𓇋𓏏
-𓇋𓈖𓋴𓇋𓂧𓅂𓄼 𓅃𓅂 𓃀𓅱𓏏𓉔 𓈎𓈖𓅱𓅃 𓅃𓉔𓄿𓏏𓂕𓋴 𓃀𓅂𓅂𓈖 𓎼𓅱𓇋𓈖𓎼 𓅱𓈖
-𓅃𓅂 𓈎𓈖𓅱𓅃 𓏏𓉔𓅂 𓎼𓄿𓅓𓅂𓄼 𓄿𓈖𓂧 𓅃𓅂𓂕𓂋𓅂 𓎼𓅱𓈖𓈖𓄿 𓊪𓃭𓄿𓇌 𓇋𓏏
-𓄿𓈖𓂧 𓇋𓆑 𓇌𓅱𓅲 𓄿𓋴𓈎 𓅓𓅂 𓉔𓅱𓅃 𓇋𓂕𓅓 𓆑𓅂𓅂𓃭𓇋𓈖𓎼
-𓂧𓅱𓈖𓂕𓏏 𓏏𓅂𓃭𓃭 𓅓𓅂 𓇌𓅱𓅲𓂕𓂋𓅂 𓏏𓅱𓅱 𓃀𓃭𓇋𓈖𓂧 𓏏𓅱 𓋴𓅂𓅂
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓃭𓅂𓏏 𓇌𓅱𓅲 𓂧𓅱𓅃𓈖
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓂋𓅲𓈖 𓄿𓂋𓅱𓅲𓈖𓂧 𓄿𓈖𓂧 𓂧𓅂𓋴𓅂𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓎢𓂋𓇌
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓋴𓄿𓇌 𓎼𓅱𓅱𓂧𓃀𓇌𓅂
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓄿 𓃭𓇋𓅂 𓄿𓈖𓂧 𓉔𓅲𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓃭𓅂𓏏 𓇌𓅱𓅲 𓂧𓅱𓅃𓈖
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓂋𓅲𓈖 𓄿𓂋𓅱𓅲𓈖𓂧 𓄿𓈖𓂧 𓂧𓅂𓋴𓅂𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓎢𓂋𓇌
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓋴𓄿𓇌 𓎼𓅱𓅱𓂧𓃀𓇌𓅂
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓄿 𓃭𓇋𓅂 𓄿𓈖𓂧 𓉔𓅲𓂋𓏏 𓇌𓅱𓅲
-𓅱𓅱𓉔 (𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪)
-𓅱𓅱𓉔𓇿𓅱𓅱𓉔 (𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪)
-𓅱𓅱𓉔 (𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂𓄼 𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂)
-𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓅱𓅱𓉔𓇿𓅱𓅱𓉔 (𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂𓄼 𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂)
-𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓅃𓅂𓂕𓆯𓅂 𓈎𓈖𓅱𓅃𓈖 𓅂𓄿𓎢𓉔 𓅱𓏏𓉔𓅂𓂋 𓆑𓅱𓂋 𓋴𓅱 𓃭𓅱𓈖𓎼
-𓇌𓅱𓅲𓂋 𓉔𓅂𓄿𓂋𓏏𓂕𓋴 𓃀𓅂𓅂𓈖 𓄿𓎢𓉔𓇋𓈖𓎼𓄼 𓃀𓅲𓏏 𓇌𓅱𓅲𓂕𓂋𓅂 𓏏𓅱𓅱 𓋴𓉔𓇌 𓏏𓅱 𓋴𓄿𓇌 𓇋𓏏
-𓇋𓈖𓋴𓇋𓂧𓅂𓄼 𓅃𓅂 𓃀𓅱𓏏𓉔 𓈎𓈖𓅱𓅃 𓅃𓉔𓄿𓏏𓂕𓋴 𓃀𓅂𓅂𓈖 𓎼𓅱𓇋𓈖𓎼 𓅱𓈖
-𓅃𓅂 𓈎𓈖𓅱𓅃 𓏏𓉔𓅂 𓎼𓄿𓅓𓅂𓄼 𓄿𓈖𓂧 𓅃𓅂𓂕𓂋𓅂 𓎼𓅱𓈖𓈖𓄿 𓊪𓃭𓄿𓇌 𓇋𓏏
-𓇋 𓆓𓅲𓋴𓏏 𓅃𓄿𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓇌𓅱𓅲 𓉔𓅱𓅃 𓇋𓂕𓅓 𓆑𓅂𓅂𓃭𓇋𓈖𓎼
-𓎼𓅱𓏏𓏏𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓅲𓈖𓂧𓅂𓂋𓋴𓏏𓄿𓈖𓂧
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓃭𓅂𓏏 𓇌𓅱𓅲 𓂧𓅱𓅃𓈖
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓂋𓅲𓈖 𓄿𓂋𓅱𓅲𓈖𓂧 𓄿𓈖𓂧 𓂧𓅂𓋴𓅂𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓎢𓂋𓇌
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓋴𓄿𓇌 𓎼𓅱𓅱𓂧𓃀𓇌𓅂
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓄿 𓃭𓇋𓅂 𓄿𓈖𓂧 𓉔𓅲𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓃭𓅂𓏏 𓇌𓅱𓅲 𓂧𓅱𓅃𓈖
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓂋𓅲𓈖 𓄿𓂋𓅱𓅲𓈖𓂧 𓄿𓈖𓂧 𓂧𓅂𓋴𓅂𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓎢𓂋𓇌
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓋴𓄿𓇌 𓎼𓅱𓅱𓂧𓃀𓇌𓅂
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓄿 𓃭𓇋𓅂 𓄿𓈖𓂧 𓉔𓅲𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓃭𓅂𓏏 𓇌𓅱𓅲 𓂧𓅱𓅃𓈖
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓂋𓅲𓈖 𓄿𓂋𓅱𓅲𓈖𓂧 𓄿𓈖𓂧 𓂧𓅂𓋴𓅂𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓎢𓂋𓇌
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓋴𓄿𓇌 𓎼𓅱𓅱𓂧𓃀𓇌𓅂
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓄿 𓃭𓇋𓅂 𓄿𓈖𓂧 𓉔𓅲𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓎼𓇋𓆯𓅂 𓇌𓅱𓅲 𓅲𓊪
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓃭𓅂𓏏 𓇌𓅱𓅲 𓂧𓅱𓅃𓈖
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓂋𓅲𓈖 𓄿𓂋𓅱𓅲𓈖𓂧 𓄿𓈖𓂧 𓂧𓅂𓋴𓅂𓂋𓏏 𓇌𓅱𓅲
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓅓𓄿𓈎𓅂 𓇌𓅱𓅲 𓎢𓂋𓇌
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓋴𓄿𓇌 𓎼𓅱𓅱𓂧𓃀𓇌𓅂
-𓈖𓅂𓆯𓅂𓂋 𓎼𓅱𓈖𓈖𓄿 𓏏𓅂𓃭𓃭 𓄿 𓃭𓇋𓅂 𓄿𓈖𓂧 𓉔𓅲𓂋𓏏 𓇌𓅱𓅲
-        </pre>
-      </div>
-      </div>
-      <div class="text-box">
-        <pre>
-          Python Game Development
-        </pre>
-      </div>
-    </main>
+        <div class="skillCard reveal d2">
+          <span class="num">02</span>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7"/><path d="M3 12h18v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><line x1="7" y1="16" x2="7.01" y2="16"/></svg></div>
+          <h3>Server Management</h3>
+          <p>Provisioning, monitoring and maintaining servers for uptime and stability.</p>
+        </div>
 
-    <div class="sidebar-right">
-      <div class="box">
-        <div class="box-title">FEATURED DEMOS</div>
-        <div class="box-content">
-          <p class="date">27.05.26</p>
-          <h4>Python Maze Game</h4>
-          <p>Game about finding a way out of a procedurrally generated maze</p>
-          <button class="btn btn-red">LAUNCH</button>
+        <div class="skillCard reveal d3">
+          <span class="num">03</span>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3>Software Development</h3>
+          <p>Designing programs with structure, clarity and a defined purpose.</p>
+        </div>
+
+        <div class="skillCard reveal d4">
+          <span class="num">04</span>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></div>
+          <h3>Databases</h3>
+          <p>Modelling and querying data with SQL for fast, structured access.</p>
         </div>
       </div>
-
-      <div class="box">
-        <div class="box-title">UPDATES</div>
-        <div class="box-content">
-          <p class="date">27.05.26</p>
-          <p>Initial game testing</p>
-          <button class="btn">READ MORE</button>
-        </div>
-      </div>
-
-     
-    </div>
-
-  </div>
+    </section>
+  </main>
 
   <footer>
-    <p>COPYRIGHT © 2026 GAME STUDIOS, CHAOS-AA on Github</p>
+    <p>© 2026 Taif Al-Amin — <a href="https://github.com/chaos-aa" target="_blank" rel="noopener">CHAOS-AA on GitHub</a></p>
+    <div class="foot-status">
+      <span class="foot-dot"></span>
+      <p>Open to opportunities</p>
+    </div>
   </footer>
 
+  <script>
+    // pointer-tracked spotlight glow on project cards
+    document.querySelectorAll('.projectCard').forEach(card => {
+      card.addEventListener('pointermove', e => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+        card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+      });
+    });
+  </script>
 </body>
 </html>
->

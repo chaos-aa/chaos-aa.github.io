@@ -45,6 +45,7 @@
 
       <div class="projects">
         <a href="https://chaos-aa.github.io/gamestudioTH/" class="projectCard" target="_blank" rel="noopener">
+          <div class="projWrapper">
           <div class="projTop">
             <span class="projTag">Featured</span>
             <span class="projArrow" aria-hidden="true">
@@ -56,11 +57,14 @@
             <p class="projectDetails">Basic website built with HTML, CSS and JavaScript. Built for a game studio to showcase games and details on the studio. 
               Aimed for a retro neon style theme inspired by older websites from the early 2000s.
             </p>
-            <div class="projStack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            
           </div>
+          </div>
+          <div class="projStack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
         </a>
 
         <a href="https://chaos-aa.github.io/halalblogtas/" class="projectCard" target="_blank" rel="noopener">
+          <div class="projWrapper">
           <div class="projTop">
             <span class="projTag">Project</span>
             <span class="projArrow" aria-hidden="true">
@@ -69,12 +73,15 @@
           </div>
           <div class="projBody">
             <h3 class="projTitle">Halal Takeout Tasmania</h3>
-            <p class="projectDetails">A personal blog style website that lists (or tries to at least) every Halal restaurant in Tasmania, providing basic information and a personal
+            <p class="projectDetails">
+              A personal blog style website that lists (or tries to at least) every Halal restaurant in Tasmania, providing basic information and a personal
               review on each restaurant. Built with a basic base, then converted using the Astro framework to simulate a PHP-like database structure to store the restaurants, as well
-              as including filters by tag. Currently testing using Zapier to allow users to nominate restaurants to be added directly to the site.
+              as including filters by tag. 
             </p>
-            <div class="projStack"><span>Astro</span><span>HTML</span><span>CSS</span><span>Zapier</span></div>
+            
           </div>
+          </div>
+          <div class="projStack"><span>Astro</span><span>HTML</span><span>CSS</span><span>Zapier</span></div>
         </a>
       </div>
     </section>
@@ -166,5 +173,19 @@
       });
     });
   </script>
+  <button id="toTop" class="to-top" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/>
+  </svg>
+</button>
+<script>
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', () => {
+    toTop.classList.toggle('show', window.scrollY > 400);
+  });
+  toTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 </html>
